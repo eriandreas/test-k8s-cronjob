@@ -15,7 +15,7 @@ k8sSettings:
   k8sCronJobSettingsDto:
     backoffLimit: 6
     activeDeadlineSeconds: 360
-    schedule: "*/2 * * * *"
+    schedule: "*/3 * * * *"
 envVars: []
 ports: []
 app: null
