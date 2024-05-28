@@ -1,7 +1,5 @@
-serviceType: K8S_CRON_JOB_GIT_REPOSITORY
-displayName: test-k8s-cronjob
-gitRepository: https://github.com/eriandreas/test-k8s-cronjob.git
-gitBranch: main
+serviceType: CronJob
+displayName: test-healthy-cronjob
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
@@ -12,11 +10,6 @@ k8sSettings:
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
-  k8sCronJobSettingsDto:
-    backoffLimit: 6
-    activeDeadlineSeconds: 360
-    schedule: "*/1 * * * *"
 envVars: []
 ports: []
-app: null
 
